@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Programa tret de: https://code-boxx.com/javascript-blackjack/#sec-download -->
+    <title>Blackjack</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="blackjack.js"></script>
+  </head>
+  <body>
+    <!-- Cartes del Crupier -->
+    <div id="deal-wrap">
+      <!-- Punts del crupier + STAND -->
+      <div id="deal-data">
+        <span id="deal-stand">STAND</span>
+        Mà del crupier - <span id="deal-points">?</span>
+      </div>
+      <!-- Cartes del crupier -->
+      <div id="deal-cards"></div>
+    </div>
+    
+    <!-- Cartes del jugador -->
+    <div id="play-wrap">
+      <!-- Punts del jugador + STAND  -->
+      <div id="play-data">
+        <span id="play-stand">STAND</span>
+        Mà del jugador - <span id="play-points">0</span>
+      </div>
+      <!-- Cartes del jugador -->
+      <div id="play-cards"></div>
+    </div>
+
+    <!-- PLAY! -->
+    <div id="play-control">
+      <!-- START -->
+      <input type="button" id="playc-start" value="Play!"/>
+      <!-- HIT O STAND -->
+      <input type="button" id="playc-hit" value="Hit"/>
+      <input type="button" id="playc-stand" value="Stand"/>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+
+/* Contenidors */
+#deal-wrap, #play-wrap {
+    min-height: 120px;
+  }
+  #deal-data, #play-data {
+    padding: 10px;
+    color: #333;
+  }
+  #deal-stand, #play-stand {
+    display: none;
+    padding: 5px;
+    background: #ab2323;
+    color: #fff;
+  }
+  #deal-stand.stood, #play-stand.stood { display: inline-block; }
+   
+  /* Cartes */
+  #deal-cards, #play-cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .bj-card {
+    box-sizing: border-box;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #eaeaea;
+  }
+  
+  /* Cartes del crupier */
+  #deal-wrap { background: #e4f0ff; }
+  #deal-data { background: #d2e6ff; }
+  #deal-first .front { display: none; }
+  #deal-first.show .back { display: none; }
+  #deal-first.show .front { display: block; }
+  
+  /* Cartes del jugador */
+  #play-wrap { background: #ffe7e7; }
+  #play-data { background: #f1caca; }
+  
+  /* Controls del joc */
+  #play-control {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    padding: 10px;
+    background: #eee;
+  }
+  #play-control input {
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 0;
+    padding: 10px 0;
+    background: #4381de;
+    color: #fff;
+    width: 100%;
+  }
+  #playc-hit, #playc-stand { display: none; }
+  #play-control.started { grid-template-columns: 50% 50%; }
+  #play-control.started #playc-start { display: none; }
+  #play-control.started #playc-hit, #play-control.started #playc-stand { display: block; }
